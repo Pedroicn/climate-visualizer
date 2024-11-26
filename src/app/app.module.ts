@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MapComponent } from './components/map/map.component';
 import { GraphComponent } from './components/graph/graph.component';
 import { ExportPdfComponent } from './components/export-pdf/export-pdf.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ExportPdfComponent } from './components/export-pdf/export-pdf.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimations()
